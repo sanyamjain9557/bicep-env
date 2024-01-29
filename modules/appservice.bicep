@@ -11,11 +11,3 @@ resource webappserver 'Microsoft.Web/serverfarms@2022-09-01' = {
     name: sku
   }
 }
-
-resource webapp 'Microsoft.Web/sites@2022-09-01' = {
-  name: webAppName
-  location: location
-  dependsOn: [
-    webappserver
-  ]
-}
