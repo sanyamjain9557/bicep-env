@@ -12,7 +12,7 @@ module AppServicePlan 'modules/appservice.bicep' = {
   }
 }
 
-module saccount 'modules/SA.bicep' = {
+module saccount 'modules/sa.bicep' = {
   name: 'saccountModule'
   params: {
     location: location
