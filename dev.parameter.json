@@ -7,12 +7,6 @@
     },
     "location": {
       "value": "East US"
-    },
-    "sku": {
-      "value": "F1"
-    },
-    "webAppName": {
-      "value": "devwebAppKomatsu"
     }
   }
 }
