@@ -1,10 +1,14 @@
 param location string
 param storageAccountsku string
+param webAppName string
+param sku string
 
 module AppServicePlan 'modules/appservice.bicep' = {
   name: 'appServicePlanModule'
   params: {
     location: location
+    sku: sku
+    webAppName: webAppName
   }
 }
 
