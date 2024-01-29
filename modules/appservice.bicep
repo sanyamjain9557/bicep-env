@@ -1,6 +1,6 @@
-param webAppName string = 'webAppKomatsu'
-param location string = resourceGroup().location
-param sku string = 'F1'
+param webAppName string
+param location string
+param sku string
 
 var appServicePlanName = 'AppServicePlan-${webAppName}'
 
