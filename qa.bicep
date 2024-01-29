@@ -1,7 +1,7 @@
 param envName string
 param location string
 param storageAccountsku string
-param webAppName string = 'eus-${envName}-test'
+param webAppName string = 'eus-${envName}-env'
 param sku string
 
 module AppServicePlan 'modules/appservice.bicep' = {
