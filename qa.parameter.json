@@ -11,8 +11,8 @@
     "sku": {
       "value": "F1"
     },
-    "webAppName": {
-      "value": "qawebAppKomatsu"
+    "envName": {
+      "value": "qaweb"
     }
   }
 }
