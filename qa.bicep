@@ -1,22 +1,14 @@
 param envName string
 param location string
-param storageAccountsku string
-param webAppName string = 'eus-${envName}-env'
+param webAppName string = 'eus${envName}webapp'
 param sku string
 
-module AppServicePlan 'modules/appservice.bicep' = {
-  name: 'appServicePlanModule'
+
+module Webapp 'modules/webappservice.bicep' = {
+  name: 'WebappModule'
   params: {
     location: location
     sku: sku
     webAppName: webAppName
-  }
-}
-
-module saccount 'modules/sa.bicep' = {
-  name: 'saccountModule'
-  params: {
-    location: location
-    storageAccountsku: storageAccountsku
   }
 }
