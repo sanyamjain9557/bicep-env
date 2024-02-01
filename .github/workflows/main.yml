@@ -25,6 +25,5 @@ jobs:
       with:
         subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
         resourceGroupName: bicep
-        template: ./qa.bicep
-        parameters: ./qa.parameter.json
+        template: ./modules/webappservice.bicep
         failOnStdErr: false
