@@ -1,5 +1,5 @@
 param webAppName string = 'vishnuappko'
-param location string = 'East US'
+param location string = resourceGroup().location
 param sku string = 'F1'
 
 var appServicePlanName = 'AppServicePlan-${webAppName}'
