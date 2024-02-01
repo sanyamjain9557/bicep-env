@@ -7,7 +7,6 @@ module Webapp 'modules/rg.bicep' = {
   name: 'rgroup'
   params: {
     location: location
-    sku: sku
     envName: envName
   }
 }
