@@ -1,6 +1,6 @@
-param webAppName string
-param location string
-param sku string
+param webAppName string = 'vishnuappko'
+param location string = 'East US'
+param sku string = 'F1'
 
 var appServicePlanName = 'AppServicePlan-${webAppName}'
 
