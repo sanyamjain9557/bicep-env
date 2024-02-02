@@ -9,7 +9,7 @@
       "value": "F1"
     },
     "envName": {
-      "value": "qaenv"
+      "value": "prodenv"
     }
   }
 }
