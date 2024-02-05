@@ -17,7 +17,7 @@ jobs:
     - name: Log into Azure
       uses: azure/login@v1
       with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
+        creds: ${{ secrets.AZURE_CREDENTIALS_RG }}
 
       # Deploy Bicep file
     - name: deploy
