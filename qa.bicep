@@ -9,7 +9,7 @@ module Webapprg 'modules/rg.bicep' = {
     location: location
     envName: envName
   }
-  scope: 'subscription'
+  scope: subscription
 }
 
 module Webapp 'modules/webappservice.bicep' = {
