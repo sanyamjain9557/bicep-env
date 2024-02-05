@@ -3,7 +3,7 @@ param location string
 param webAppName string = 'eus${envName}webapp'
 param sku string
 
-module Webapp 'modules/rg.bicep' = {
+module Webapprg 'modules/rg.bicep' = {
   name: 'rgroup'
   params: {
     location: location
