@@ -6,6 +6,7 @@ targetScope='subscription'
 
 module Webapprg 'modules/rg.bicep' = {
   name: 'rgroup'
+  scope: 'resourceGroup'
   params: {
     location: location
     envName: envName
