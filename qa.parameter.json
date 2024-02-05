@@ -5,6 +5,9 @@
     "location": {
       "value": "East US"
     },
+    "sku": {
+      "value": "F1"
+    },
     "envName": {
       "value": "qaenvdeploy"
     }
