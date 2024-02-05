@@ -3,7 +3,7 @@ targetScope='subscription'
 param envName string
 param location string
 param webAppName string = 'eus${envName}webapp'
-param sku string
+//param sku string
 
 
 module Webapprg 'modules/rg.bicep' = {
