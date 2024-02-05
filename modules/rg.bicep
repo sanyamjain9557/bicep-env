@@ -1,6 +1,7 @@
+targetScope = 'subscription'
+
 param envName string
 param location string
-targetScope='subscription'
 
 var rgname = '${envName}-rg'
 
