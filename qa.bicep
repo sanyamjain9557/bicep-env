@@ -14,11 +14,11 @@ module Webapprg 'modules/rg.bicep' = {
   }
 }
 
-module Webapp 'modules/webappservice.bicep' = {
-  name: 'WebappModule'
-  params: {
-    location: location
-    sku: sku
-    webAppName: webAppName
-  }
-}
+//module Webapp 'modules/webappservice.bicep' = {
+//  name: 'WebappModule'
+//  params: {
+//    location: location
+//    sku: sku
+//    webAppName: webAppName
+//  }
+//}
