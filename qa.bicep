@@ -22,3 +22,10 @@ module Webapp 'modules/webappservice.bicep' = {
     webAppName: webAppName
   }
 }
+
+module Funapp 'modules/funapp.bicep' = {
+  name: 'FunappModule'
+  params: {
+    appInsightsLocation: location
+  }
+}
