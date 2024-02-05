@@ -1,12 +1,13 @@
+targetScope='subscription'
+
 param envName string
 param location string
 param webAppName string = 'eus${envName}webapp'
 param sku string
-targetScope='subscription'
+
 
 module Webapprg 'modules/rg.bicep' = {
   name: 'rgroup'
-  scope: 'resourceGroup'
   params: {
     location: location
     envName: envName
