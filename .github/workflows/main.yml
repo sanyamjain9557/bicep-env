@@ -20,12 +20,21 @@ jobs:
         creds: ${{ secrets.AZURE_CREDENTIALS_RG }}
 
       # Deploy Bicep file
-    - name: deploy
+    - name: deployRG
       uses: azure/arm-deploy@v1
       with:
         scope: subscription
         subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+        template: ./qarg.bicep
+        parameters: ./qarg.parameter.json
+        failOnStdErr: false
+        region: eastus
+
+    - name: deployResource
+      uses: azure/arm-deploy@v1
+      with:
+        subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+        resourceGroupName: function-rg
         template: ./qa.bicep
         parameters: ./qa.parameter.json
         failOnStdErr: false
-        region: eastus
